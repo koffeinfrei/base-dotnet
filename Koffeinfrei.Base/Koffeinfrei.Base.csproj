@@ -42,11 +42,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="KColor.cs" />
-    <Compile Include="KCultureInfo.cs" />
-    <Compile Include="KInteger.cs" />
+    <Compile Include="KfColor.cs" />
+    <Compile Include="KfCultureInfo.cs" />
+    <Compile Include="KfInteger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="KUpdater.cs" />
+    <Compile Include="KfUpdater.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.de.resx" />
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
